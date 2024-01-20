@@ -1,0 +1,73 @@
+import { Dimensions, StyleSheet } from "react-native";
+const {height} = Dimensions.get("window");
+
+const styles = StyleSheet.create({
+    container:{
+        width:"100%",
+        height:height/6,
+    },
+    header:{
+        width:"100%",
+        flexDirection:"row",
+        justifyContent:"space-between",
+        alignItems:"center",
+        paddingHorizontal:"5%",
+        marginTop:"5%"
+    },
+    suggestionText:{
+        fontSize:16,
+        fontFamily:"Poppins-SemiBold"
+    },
+    seeAll:{
+        fontSize:12,
+        fontFamily:"Poppins-Medium"
+    },
+    singleBox:{
+        height:70,
+        width:80,
+        borderRadius:10,
+        backgroundColor:"#f2f2f2",
+        alignItems:"center",
+        justifyContent:"center"
+    },
+    boxRow:{
+        width:"100%",
+        flexDirection:"row",
+        flexGrow:1,
+        paddingVertical:"5%",
+        alignItems:"center",
+        justifyContent:"space-evenly",
+    },
+    singleContainer:{
+        alignItems:"center",
+        justifyContent:"center"
+    },
+    singleTitle:{
+        fontSize:12,
+        color:"black",
+        fontFamily:"Poppins-Medium",
+        top:"10%"
+    },
+    icon:{
+        width:70,
+        height:50
+    },
+    promo:{
+        width:60,
+        height:20,
+        borderRadius:50,
+        backgroundColor:"green",
+        alignItems:"center",
+        justifyContent:"center",
+        position:"absolute",
+        zIndex:1,
+        top:-10
+    },
+    promoText:{
+        fontSize:12,
+        fontFamily:"Poppins-Medium",
+        color:"white"
+    }
+});
+
+export default styles
